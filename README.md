@@ -84,3 +84,16 @@ Comprehensive testing was performed using pytest to ensure a high degree of conf
 ## Deployment
 
 **DockerHub Image Link:** ![Dockerhub deployment screenshot](./screenshots/Screenshot%202024-11-17%20at%2022-58-00%20ksl29_event_manager%20general.png)
+
+
+
+
+## Learning Reflection
+
+Through completing this project, I have learned a few new things about the product lifecycle and building production-ready applications. Some key takeaways include:
+
+- Test at every step. This was a lesson that was emphasized early on but this project helped highlight just how important it was. By running pytest after every change, I was able to catch bugs early and ensure that the code was working as expected. I was able to easily identify broken areas of the application just be looking at the test results and seeing why particular tests failed. This made it much easier to debug and fix issues.
+
+- Having a proper linter setup is crucial. By having a linter setup, I was able to get immediate feedback of this parts of the app had issues that needed to be fixed as soon as I opened a file. This helped me catch errors that I didn't notice from the UI or from the tests. This allowed me to feel more confident in the code I was writing and that it was following best practices.
+
+- Thoroughly read the documentation. During the completion of this project, I watched the instructor video multiple times and also read the readme multiple times, this allowed me to understand the requirements of the project and what was expected of me. This helped me to ensure that I was on the right track and that I was completing the project as expected.

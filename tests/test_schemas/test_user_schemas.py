@@ -35,7 +35,7 @@ def test_user_base_valid_email(email,user_base_data):
     ("username@-domain.com", "value is not a valid email address"),  # Domain starts with hyphen
     ("username@domain.com-", "value is not a valid email address"),  # Domain ends with hyphen
 ])
-def test_user_base_invalid_email(email, expected_error, user_base_data):
+def test_user_base_invalid_email_address(email, expected_error, user_base_data):
     user_base_data["email"] = email
     with pytest.raises(ValidationError) as exc_info:
         UserBase(**user_base_data)

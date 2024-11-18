@@ -83,4 +83,4 @@ Comprehensive testing was performed using pytest to ensure a high degree of conf
 
 ## Deployment
 
-**DockerHub Image Link:** [Insert DockerHub Image Link Here]
+**DockerHub Image Link:** ![Dockerhub deployment screenshot](./screenshots/Screenshot%202024-11-17%20at%2022-58-00%20ksl29_event_manager%20general.png)

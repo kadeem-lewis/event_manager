@@ -30,7 +30,7 @@ def test_user_base_valid_email(email,user_base_data):
     ("@missingusername.com", "value is not a valid email address"),  # Missing username
     ("username@.com", "value is not a valid email address"),  # Domain name missing
     ("username@domain", "value is not a valid email address"),  # No TLD
-    ("username@domain.c", "value is not a valid email address"),  # TLD too short
+    ("username@domain.c", "String should match pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'"),  # TLD too short
     ("username@domain..com", "value is not a valid email address"),  # Double dot in domain
     ("username@-domain.com", "value is not a valid email address"),  # Domain starts with hyphen
     ("username@domain.com-", "value is not a valid email address"),  # Domain ends with hyphen

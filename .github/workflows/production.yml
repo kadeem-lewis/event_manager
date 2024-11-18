@@ -54,6 +54,12 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     environment: production
+    env:
+      SMTP_SERVER: smtp.mailtrap.io
+      SMTP_PORT: 2525
+      SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+      SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+
     steps:
       - uses: actions/checkout@v4
       
